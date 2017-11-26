@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "603706495419",
+    "firebase_url": "https://onyxnotify.firebaseio.com",
+    "project_id": "onyxnotify",
+    "storage_bucket": "onyxnotify.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603706495419:android:b2bfe2d9a3455ffc",
+        "android_client_info": {
+          "package_name": "com.landtanin.oxfordhackkkkk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603706495419-1jehvq107qnb68uooqgmkbpi9pd900ao.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.landtanin.oxfordhackkkkk",
+            "certificate_hash": "b948079b6cc5c6126d73e048b5366564f705bb11"
+          }
+        },
+        {
+          "client_id": "603706495419-odnd8r6m8odo09cvbvkldpraltv6fvqu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn-Il_c3A5dMGQMqwMb57bMyu2bLK2q_g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603706495419-um2erqjsqr1stjr87d26rceksvah28h0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.notifyonyx"
+              }
+            },
+            {
+              "client_id": "603706495419-odnd8r6m8odo09cvbvkldpraltv6fvqu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
