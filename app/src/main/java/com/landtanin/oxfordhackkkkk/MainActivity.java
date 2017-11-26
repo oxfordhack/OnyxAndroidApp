@@ -2,6 +2,7 @@ package com.landtanin.oxfordhackkkkk;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
                 String token = FirebaseInstanceId.getInstance().getToken();
                 Toast.makeText(MainActivity.this, token, Toast.LENGTH_SHORT).show();
+                Log.d("TOKEN", "onClick: " + token);
 
             }
         });

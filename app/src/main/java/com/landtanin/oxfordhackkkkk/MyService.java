@@ -53,6 +53,9 @@ public class MyService extends FirebaseMessagingService {
         // Check if message contains a notification payload.
         if (remoteMessage.getNotification() != null) {
             Log.d(TAG, "Message Notification Body: " + remoteMessage.getNotification().getBody());
+
+            sendNotification(remoteMessage.getNotification().getBody());
+
         }
 
         // Also if you intend on generating your own notifications as a result of a received FCM
@@ -99,6 +102,7 @@ public class MyService extends FirebaseMessagingService {
                 new NotificationCompat.Builder(this, channelId)
                         .setSmallIcon(R.drawable.ic_launcher_background)
                         .setContentTitle("FCM Message")
+                        .setPriority(2)
                         .setContentText(messageBody)
                         .setAutoCancel(true)
                         .setSound(defaultSoundUri)
