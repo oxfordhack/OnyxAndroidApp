@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.iid.FirebaseInstanceId;
@@ -14,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ProgressBar progressBar;
     private Button btn;
+    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,10 +25,16 @@ public class MainActivity extends AppCompatActivity {
 
         progressBar = findViewById(R.id.progressBar);
         btn = findViewById(R.id.button2);
+        textView = findViewById(R.id.textView_main);
+        int progressBarValue = 30;
 
         progressBar.setMax(100);
         progressBar.setMin(0);
-        progressBar.setProgress(60);
+        progressBar.setProgress(progressBarValue);
+
+        String statusTxt = progressBarValue + "%";
+
+        textView.setText(statusTxt);
 
 //        String token = FirebaseInstanceId.getInstance().getToken();
 //
